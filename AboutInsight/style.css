@@ -63,3 +63,7 @@ li a {
   width: 50%;
   font-size: 230%;
 }
+
+.nolink{
+  cursor: default;
+}
