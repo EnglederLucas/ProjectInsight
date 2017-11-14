@@ -1,6 +1,12 @@
 body{
+  background: url(socialmedia.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  position: absolute;
   margin-left: 0;
-  background-color: #D9E7EC;
   font-family: 'Maven Pro', sans-serif;
 }
 
@@ -38,9 +44,10 @@ li a {
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
+  margin: 145% 200%;
   cursor: pointer;
   border-radius: 24px;
+  width: 150px;
 }
 
 .button:hover {
@@ -55,4 +62,8 @@ li a {
   padding-top: 7cm;
   width: 50%;
   font-size: 230%;
+}
+
+.nolink{
+  cursor: default;
 }
