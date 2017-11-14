@@ -53,7 +53,6 @@ li a {
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-}
 
 .text{
   margin-left: 25%;
@@ -64,6 +63,6 @@ li a {
   font-size: 230%;
 }
 
-.nolink{
-  cursor: default;
+.active {
+    background-color: #3b5998;
 }
