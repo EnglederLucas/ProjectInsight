@@ -35,6 +35,13 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
+.orange-box{
+  background-color: #F05F40;
+  width: 800px;
+  padding: 25px;
+  margin: 25px;
+}
+
 .bg-primary {
   background-color: #F05F40 !important; }
 
@@ -134,7 +141,7 @@ body {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/socialmedia.jpeg");
+  background-image: url("../img/social-media-1806995_960_720.png");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
