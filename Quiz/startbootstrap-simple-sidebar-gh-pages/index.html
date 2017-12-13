@@ -14,6 +14,10 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
 </head>
@@ -28,25 +32,16 @@
                 <li class="sidebar-brand">
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="#">INTERESTS</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="#">SOCIAL</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#">LIFE</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#">USE</a>
                 </li>
             </ul>
         </div>
@@ -58,7 +53,7 @@
                 <h1>Quiz</h1>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
                     Stet clita kasd gubergren, no sea takimata </p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                <!--<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>-->
                 <!--<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Start Quiz</a> -->
             </div>
         </div>
@@ -73,10 +68,17 @@
 
     <!-- Menu Toggle Script -->
     <script>
+    $( document ).ready(function() {      
+        var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-    document.addEventListener('DOMContentLoaded', function() {
+        if (!isMobile.matches) {
+        //Conditional script here
+            $("#wrapper").toggleClass("toggled");
+        }
+    });
+    /*document.addEventListener('DOMContentLoaded', function() {
         $("#wrapper").toggleClass("toggled");
-    }, false);
+    }, false);*/
     </script>
 
 </body>
