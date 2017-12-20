@@ -37,9 +37,17 @@ h6 {
 
 .orange-box{
   background-color: #F05F40;
-  width: 800px;
-  padding: 25px;
-  margin: 25px;
+  width: 396px;
+  margin-left: 165px;
+  border-radius: 10px;
+}
+
+.text-orange{
+  color: #F05F40;
+}
+
+.text-black{
+  color: #000000;
 }
 
 .bg-primary {
