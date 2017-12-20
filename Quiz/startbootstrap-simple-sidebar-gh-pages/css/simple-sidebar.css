@@ -4,10 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 
+ html{
+  height:100vh;
+}
+
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;  
-  /*font-family: 'Merriweather', serif;*/  
+  height: 100%;
 }
 
 #wrapper {
@@ -18,12 +22,12 @@ body {
   transition: all 0.5s ease;
 }
 
+
 /*#wrapper.toggled {
   padding-left: 250px;
 }*/
 
 #sidebar-wrapper {
-  z-index: 1000;
   position: fixed;
   left: 250px;
   width: 0;
@@ -39,20 +43,33 @@ body {
 
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: -250px;
 }
 
 #page-content-wrapper {
-  top: 50%;  
-  display:flex;
-  align-items:center;
+  position: absolute;
+  left: 3%;
+  height: 100vh;
+  width: 90%;
+  transform: translateY(-5%);
+  /*transform: translateY(-60%);*/
+  /*-webkit-transform: translateY(-60%);*/  
 }
 
-.container-fluid {
-  display:flex;
-  align-items:center;
+#sidebar-wrapper{
+  height: 100vh;
+  display: table;
+  position: absolute;
 }
 
+#question {
+  display: table;
+}
+
+#question p {
+  position: absolute;
+  vertical-align: middle;
+}
 
 #wrapper.toggled #page-content-wrapper {
   position: relative;
@@ -63,14 +80,15 @@ body {
 /* Sidebar Styles */
 
 .sidebar-nav {
-  /*position: absolute;*/
+  position: absolute;
   top: 0;
   width: 250px;
   margin: 0;
   padding: 0;
   list-style: none;
   position: absolute;
-  top: 40%; 
+  vertical-align: middle;
+  top: 50%; 
   transform: translateY(-60%);
   -webkit-transform: translateY(-60%);  
 }
@@ -128,7 +146,8 @@ body {
     width: 250px;
   }
   #page-content-wrapper {
-    padding: 20px;
+    width: 85%;
+    left: 5%;
     position: relative;
     display:flex;
     align-items:center;
