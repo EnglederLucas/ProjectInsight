@@ -51,7 +51,6 @@ body {
   left: 3%;
   height: 100vh;
   width: 90%;
-  transform: translateY(-5%);
   /*transform: translateY(-60%);*/
   /*-webkit-transform: translateY(-60%);*/  
 }
@@ -151,6 +150,7 @@ body {
     position: relative;
     display:flex;
     align-items:center;
+    transform: translateY(-5%);    
   }
   #wrapper.toggled #page-content-wrapper {
     position: relative;
