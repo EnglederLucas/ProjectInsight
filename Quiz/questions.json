@@ -1,0 +1,14 @@
+{
+    "social": [
+    {
+      "question": "Who is the strongest?",
+      "answers": {
+        "a": "Superman",
+        "b": "The Terminator",
+        "c": "Waluigi, obviously"
+      },
+      "correctAnswer": "c"
+    }
+  ]
+}
+  
