@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.orange{
+    padding: 4%;
+    background-color:  #F05F40;
+    font-size: 140%;
+    color: white;
+}
+
+.white{
+    padding: 4%;
+    background-color:  white;
+    font-size: 140%;
+    color: black;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin: 0 3% 3% 0;
+}
+
+#rights{
+    font-size: 50%;
+}
+
+
