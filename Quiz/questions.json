@@ -1,13 +1,20 @@
 {
     "social": [
     {
-      "question": "Who is the strongest?",
+      "question": "What do you like to do in your leisure time?",
       "answers": {
-        "a": "Superman",
-        "b": "The Terminator",
-        "c": "Waluigi, obviously"
-      },
-      "correctAnswer": "c"
+        "a": "Sports",
+        "b": "Watching TV or playing Videogames",
+        "c": "Going out with friends",
+        "d": "None of the above"
+      }
+    },
+    {
+      "question": "What type of Book Genre do you like the most?",
+      "answers": {
+        "a": "Novel",
+        "b": ""
+      }
     }
   ]
 }
