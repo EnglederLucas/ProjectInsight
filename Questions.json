@@ -1,0 +1,39 @@
+{
+	"question"="Would you consider yourself a reader?",
+	"a":"No, I don't read at all",
+	"b":"Well, sometimes I read",
+	"c":"Yes, I read quite a lot",
+	"d":"I would rather read than take this quiz right now"
+},
+
+{
+	"question"="Do you watch a lot of TV-shows and movies?",
+	"a":"What's a TV?",
+	"b":"It's a waste of time",
+	"c":"Of course I do",
+	"d":"I have a TV in every room of my house!"
+},
+
+{
+	"question"="Are you athletic?",
+	"a":"I'm a professional couch potato",
+	"b":"I should be working out right now",
+	"c":"Well, kinda",
+	"d":"I'm an absolute sportscannon"
+},
+
+{
+	"question"="",
+	"a":"",
+	"b":"",
+	"c":"",
+	"d":""
+},
+
+{
+	"question"="",
+	"a":"",
+	"b":"",
+	"c":"",
+	"d":""
+},
