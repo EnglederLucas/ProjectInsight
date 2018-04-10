@@ -1,5 +1,5 @@
-"qanda":[
-	//interests
+{
+	"questions":[
 	{
 		"question":"Would you consider yourself a reader?",
 		"a":"No, I don't read at all",
@@ -23,7 +23,6 @@
 		"c":"Well, kinda",
 		"d":"I'm an absolute sportaholic"
 	},
-
 	{
 		"question":"Are you fond of music?",
 		"a":"I only listen to the radio",
@@ -31,7 +30,6 @@
 		"c":"Yeah, I actually play an instrument ",
 		"d":"I live off of music"
 	},
-//social
 	{
 		"question":"Do you think of yourself as extroverted?",
 		"a":"I'm like the definition of introverted",
@@ -48,14 +46,11 @@
 	},
 	{
 		"question":"What about friends?",
-		"a":"Real or imaginary?",//The Tv Show?
+		"a":"Do you mean the TV show?",
 		"b":"I got one or two close friends",
 		"c":"#squadgoals",
 		"d":"I know a guy for everything"
 	},
-
-
-	//Use
 	{
 		"question":"Is it important to you to keep up with your friends?",
 		"a":"Not really",
@@ -78,14 +73,4 @@
 		"d":"It's everyday bro"
 	}
 ]
-
-<<<<<<< HEAD
-{
-	"question"="Are you athletic?",
-	"a":"I'm a professional couch potato",
-	"b":"I should be working out right now",
-	"c":"Well, kinda",
-	"d":"I'm an absolute sports cannon"
-}, 
-=======
->>>>>>> a30fbb1fa2e06ece43ad48b1bde1c1dc456f2d4f
+}
