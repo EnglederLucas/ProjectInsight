@@ -1,9 +1,12 @@
 const express = require('express');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
 
-mongoose.connect('mongodb://localhost/questions');
+//mongoose.connect('mongodb://localhost/questions');
+
+//mongoose.connect('mongodb://engllucas:p%40ssw0rd@insight.mongodb.net/questions');
+
 let db = mongoose.connection;
 
 
