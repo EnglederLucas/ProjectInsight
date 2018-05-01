@@ -5,7 +5,12 @@ const path = require('path');
 
 //mongoose.connect('mongodb://localhost/questions');
 
-//mongoose.connect('mongodb://engllucas:p%40ssw0rd@insight.mongodb.net/questions');
+var uri = 'password1&';
+var res = encodeURIComponent(uri); 
+
+//console.log(res);
+
+//mongoose.connect('mongodb+srv://engllucas:' + res + '@insight-quhku.mongodb.net/test');
 
 let db = mongoose.connection;
 
@@ -25,16 +30,87 @@ let Question = require('./models/question');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');  
 
+let questionsObject = [
+	{
+		question:"Would you consider yourself a reader?",
+		a:"No, I don't read at all",
+		b:"Well, sometimes I read",
+		c:"Yes, I read quite a lot",
+		d:"I would rather read than take this quiz right now"
+	},
+	
+	{
+		question:"Do you watch a lot of TV-shows and movies?",
+		a:"What's a TV?",
+		b:"It's a waste of time",
+		c:"Of course I do",
+		d:"I have a TV in every room of my house!"
+	},
+	
+	{
+		question:"Are you athletic?",
+    a:"I'm a professional couch potato",
+		b:"I should be working out right now",
+		c:"Well, kinda",
+		d:"I'm an absolute sportaholic"
+	},
+	{
+		question:"Are you fond of music?",
+		a:"I only listen to the radio",
+		b:"Some casual listening",
+		c:"Yeah, I actually play an instrument ",
+		d:"I live off of music"
+	},
+	{
+		question:"Do you think of yourself as extroverted?",
+		a:"I'm like the definition of introverted",
+		b:"I'm more of a timid person",
+		c:"People say I talk alot",
+		d:"I talk more to strangers than to my family"
+	},
+	{		
+    question:"What kind of relationship dou share with your family?",
+		a:"It's complicated",
+		b:"I don't know, haven't talked to them in a while",
+		c:"Fine.",
+		d:"I practically live with my parents"
+	},
+	{
+    question:"What about friends?",
+    a:"Do you mean the TV show?",
+    b:"I got one or two close friends",
+    c:"#squadgoals",
+    d:"I know a guy for everything"
+	},
+	{
+		question:"Is it important to you to keep up with your friends?",
+		a:"Not really",
+		b:"Some of them",
+		c:"Mostly people I know from school or college",
+		d:"Isn't that the whole point of this?"
+	},
+	{
+		question:"Are you planning to create a blog?",
+		a:"I don't see myself blogging",
+		b:"Maybe, I don't know yet",
+		c:"I'd like to try",
+		d:"Absolutely"
+	},
+	{
+		question:"Are you the type of person to take pictures of your food?",
+		a:"I hate it when someone does this",
+		b:"No, not yet",
+		c:"Only on special occasions",
+		d:"It's everyday bro"
+	}
+];
+
+
+
 app.get('/', function(req, res){
-    Question.find({}, function(err, question){
-        if(err){
-          console.log(err);
-        }
-        else{
-          res.render('x', {
-            questions: question
-          });
-        }
+
+    res.render('y', {
+      question: questionsObject[0]
     });
     console.log('HOME');
 });
