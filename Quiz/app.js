@@ -115,9 +115,21 @@ app.get('/', function(req, res){
     console.log('HOME');
 });
 
+app.get('/button', function(req, res){
+	res.render('x');
+});
+
+app.post('/button', function(req, res){
+	button.addEventListener('onClick', function(e) {
+		console.log('button was clicked');
+	})
+});
+
 app.listen(3000, function(){
     console.log('Server connected to 3000');
 });
+
+
 
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
