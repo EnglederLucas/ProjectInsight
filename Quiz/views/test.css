@@ -1,0 +1,49 @@
+#but_prev{
+    text-align: left;
+    color: #fff;
+    background-color: orange;
+    padding: 10px 20px;
+    margin-left: 30%;
+    /*text-shadow: -1px 1px #417cb8;*/
+    border: none;
+}
+
+
+#but_next{
+    float: right;
+    color: #fff;
+    background-color: orange;
+    padding: 10px 20px;
+    margin-right: 30%;
+    /*text-shadow: -1px 1px #417cb8;*/
+    border: none;
+}
+
+#question{
+    margin-top: 40vh;
+}
+
+#table {
+    display:table;
+    float: none;
+}
+
+.row {
+    display:table-row;
+}
+
+.cell{
+    display:table-cell;
+    background-color: orange;
+    padding: 20px;
+}
+
+#a, #c{
+    float: left;
+    margin-left: 20vh;
+}
+
+#b, #d{
+    float: right;
+    margin-left: 20vh;
+}

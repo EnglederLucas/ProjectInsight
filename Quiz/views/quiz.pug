@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Quiz
+
+    style
+      include test.css
+      include bootstrap.min.css
+
+    link(href='/vendor/bootstrap/css/test.css', rel='stylesheet')
+    //link(href='simple-sidebar.css', rel='stylesheet', type='text/css')
+    // Bootstrap core CSS
+    link(href='/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather', rel='stylesheet')
+  body
+    div(id='question')
+      ul.list-group.align-content-center(id='list')
+          li.list-group-item= question.question
+          div(id="first")
+            div(class="row")
+              div(class="cell" id="a")=question.a
+              div(class="cell" id="b")=question.b
+          div(id="second")
+            div(class="row")
+              div(class="cell" id="c")=question.c
+              div(class="cell" id="d")=question.d
+
+          -var num = parseInt(index, 10) + 1;
+          -var secNum = parseInt(index, 10) - 1;
+          div
+            a(href="/" + secNum)
+              button(id='but_prev' type='button') Previous
+            a(href="/" + num)
+              button(id='but_next' type='button') Next
+
+
+

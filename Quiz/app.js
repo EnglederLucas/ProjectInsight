@@ -5,8 +5,8 @@ const path = require('path');
 
 //mongoose.connect('mongodb://localhost/questions');
 
-var uri = 'password1&';
-var res = encodeURIComponent(uri); 
+//var uri = 'password1&';
+//var res = encodeURIComponent(uri); 
 
 //console.log(res);
 
@@ -105,14 +105,30 @@ let questionsObject = [
 	}
 ];
 
-
+var currentIndex = 0;
 
 app.get('/', function(req, res){
+	console.log("render");
 
-    res.render('y', {
-      question: questionsObject[0]
-    });
+    res.render('index', {
+		title: 'Questions'
+	});
     console.log('HOME');
+});
+
+app.get('/:index', function(req, res){
+	
+	if(req.params.index >= questionsObject.length || req.params.index < 0)
+	{
+		return;
+	}
+
+	res.render('quiz', {
+	  question: questionsObject[req.params.index],
+	  index: req.params.index
+	});
+	console.log(req.params.index);		
+	console.log('HOME');
 });
 
 app.listen(3000, function(){
