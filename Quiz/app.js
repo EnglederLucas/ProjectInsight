@@ -69,18 +69,18 @@ let questionsObject = [
 		d:"I talk more to strangers than to my family"
 	},
 	{		
-    question:"What kind of relationship dou share with your family?",
+    	question:"What kind of relationship dou share with your family?",
 		a:"It's complicated",
 		b:"I don't know, haven't talked to them in a while",
 		c:"Fine.",
 		d:"I practically live with my parents"
 	},
 	{
-    question:"What about friends?",
-    a:"Do you mean the TV show?",
-    b:"I got one or two close friends",
-    c:"#squadgoals",
-    d:"I know a guy for everything"
+    	question:"What about friends?",
+    	a:"Do you mean the TV show?",
+    	b:"I got one or two close friends",
+    	c:"#squadgoals",
+    	d:"I know a guy for everything"
 	},
 	{
 		question:"Is it important to you to keep up with your friends?",
