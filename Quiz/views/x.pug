@@ -5,32 +5,10 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
+    script(src='x.js')
     title Quiz
   body
-    #wrapper
-      #sidebar-wrapper
-        ul.sidebar-nav
-          li.sidebar-brand
-          li
-            a(href='#') INTERESTS
-          li
-            a(href='#') SOCIAL
-          li
-            a(href='#') LIFE
-          li
-            a(href='#') USE
-      #page-content-wrapper
-        #question
-          ul.list-group.align-content-center
-            each question, i in questions
-              li.list-group-item= question.question
-              ul.list-group
-                li.list-group-item-warning= question.a
-                li.list-group-item-success= question.b
-                li.list-group-item-primary=question.c
-                li.list-group-item-danger=question.d
-                
-
+    button(onclick='console.log("test");')
 
 
 
