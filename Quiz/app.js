@@ -107,16 +107,17 @@ let questionsObject = [
 
 var currentIndex = 0;
 
-app.get('/', function(req, res){
-	console.log("render");
+app.get('/',function(req,res){-
+	//res.sendFile('../Mainpage/index.html');
+	res.sendFile('A:\Coding\WEBT\Insight\Mainpage');
+});
 
+app.get('/questions', function(req, res){
     res.render('index', {
 		title: 'Questions'
 	});
-    console.log('HOME');
 });
 
-<<<<<<< HEAD
 app.get('/:index', function(req, res){
 	
 	if(req.params.index >= questionsObject.length || req.params.index < 0)
@@ -130,16 +131,6 @@ app.get('/:index', function(req, res){
 	});
 	console.log(req.params.index);		
 	console.log('HOME');
-=======
-app.get('/button', function(req, res){
-	res.render('x');
-});
-
-app.post('/button', function(req, res){
-	button.addEventListener('onClick', function(e) {
-		console.log('button was clicked');
-	})
->>>>>>> fe4ad3b8be562bda6b0284f42c6e4eba76e2a93b
 });
 
 app.listen(3000, function(){
