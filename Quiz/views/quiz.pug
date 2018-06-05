@@ -8,8 +8,8 @@ html(lang='en')
     title Quiz
 
     style
-      include test.css
-      include bootstrap.min.css
+      include ../css/quiz.css
+      include ../vendor/bootstrap/css/bootstrap.min.css
 
     link(href='/vendor/bootstrap/css/test.css', rel='stylesheet')
     //link(href='simple-sidebar.css', rel='stylesheet', type='text/css')
@@ -32,9 +32,9 @@ html(lang='en')
     -var num = parseInt(index, 10) + 1;
     -var secNum = parseInt(index, 10) - 1;
     div(id='buttons')
-      a(href="/" + secNum)
+      a(href="/questions/" + secNum)
         button(id='but_prev' type='button') Previous
-      a(href="/" + num)
+      a(href="/questions/" + num)
         button(id='but_next' type='button') Next
 
 

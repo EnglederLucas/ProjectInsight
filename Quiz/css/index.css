@@ -1,0 +1,8 @@
+.button{
+    align-content: center;
+    color: #fff;
+    background-color: orange;
+    padding: 10px 20px;
+    /*text-shadow: -1px 1px #417cb8;*/
+    border: none;
+}
