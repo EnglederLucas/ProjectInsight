@@ -1,16 +1,16 @@
-ybody {
+body {
     font-family: 'Open Sans', sans-serif;  
 }
 
 .orange{
-    padding: 5%;
+    padding: 4%;
     background-color:  #F05F40;
     font-size: 140%;
     color: white;
 }
 
 .white{
-    padding: 5%;
+    padding: 4%;
     background-color:  white;
     font-size: 140%;
     color: black;

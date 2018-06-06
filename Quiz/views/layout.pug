@@ -1,8 +1,14 @@
 html
   head
+    style
+      include ../css/index.css
+      include ../vendor/bootstrap/css/bootstrap.min.css
+
     title knowledgebase
     link(href='/cssSidebar/simple-sidebar.css', rel='stylesheet')
     link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(href='simple-sidebar.css', rel='stylesheet', type='text/css')
+
   body
     block content
 
