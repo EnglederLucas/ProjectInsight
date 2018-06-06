@@ -8,8 +8,10 @@
 }
 
 #buttons{
-    margin-top: 60vh;
-    margin-left: 5vh;
+    margin-top: 20vh;
+    margin-right: 5vh;
+    float: right;
+    position: relative;
 }
 
 #but_prev:hover{
@@ -21,12 +23,6 @@
     background-color: #cc5200;
     /*text-shadow: -1px 1px #417cb8;*/
 }
-
-#buttons{
-    float: left;
-    position: relative;
-}
-
 
 #but_next{
     float: right;
@@ -59,7 +55,7 @@ h1{
 #answers{
     margin-top: 10%;
     color: white;
-    font-size: 50%;
+    font-size: 300%;
 }
 
 #table {
@@ -73,17 +69,19 @@ h1{
 
 .cell{
     display:table-cell;
+    height: 195px;
+    width: 49%;
     background-color: orange;
     padding: 20px;
-    width: 50%;
     border-style: solid;
-    border-width: 10px;
+    border-width: thin;
 }
 
 #qtitle{
+    font-size: 350%;
     float: left;
-    margin-left: 20vh;
-    margin-top: 10vh;
+    margin-left: 55vh;
+    margin-top: 0vh;
 }
 
 #list{
@@ -97,7 +95,7 @@ h1{
 
 #b, #d{
     float: right;
-    padding-left: 10%;
+    /*padding-left: 10%;*/
 }
 
 html{
