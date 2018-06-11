@@ -11,6 +11,9 @@ html(lang='en')
       include ../css/quiz.css
       include ../vendor/bootstrap/css/bootstrap.min.css
 
+    script
+      include ../js/quiz.js
+
     link(href='/vendor/bootstrap/css/test.css', rel='stylesheet')
     //link(href='simple-sidebar.css', rel='stylesheet', type='text/css')
     // Bootstrap core CSS
@@ -19,7 +22,7 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Merriweather', rel='stylesheet')
   body
-    h1(id='qtitle')=question.question
+    h1(id= 'qtitle')= question.question
       div(id='answers')
         div(id="first")
           div(class="row")
@@ -36,6 +39,10 @@ html(lang='en')
         button(id='but_prev' type='button') Previous
       a(href="/questions/" + num)
         button(id='but_next' type='button') Next
+
+
+
+
 
 
 
