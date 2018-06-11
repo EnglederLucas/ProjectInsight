@@ -118,6 +118,11 @@ app.get('/questions', function(req, res){
 	});
 });
 
+app.post('/questions/:index', function(req, res){
+	console.log("clicked" +  req.params.index + req.body);
+
+})
+
 app.get('/questions/:index', function(req, res){
 	
 	if(req.params.index >= questionsObject.length || req.params.index < 0)
@@ -125,7 +130,7 @@ app.get('/questions/:index', function(req, res){
 		return;
 	}
 
-	res.render('quiz', {
+	res.render('x', {
 	  question: questionsObject[req.params.index],
 	  index: req.params.index
 	});
