@@ -166,7 +166,7 @@ app.get('/questions/:index', function(req, res){
 		return;
 	}
 
-	res.render('x', {
+	res.render('quiz', {
 	  question: questionsObject[req.params.index],
 	  index: req.params.index
 	});
