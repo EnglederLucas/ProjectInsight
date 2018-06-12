@@ -5,7 +5,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title Quiz
+    title X
 
     style
       include ../css/quiz.css
@@ -23,15 +23,15 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Merriweather', rel='stylesheet')
   body
     h1(id= 'qtitle')= question.question
-    div(id='answers')
-      div(id="first")
-        div(class="row")
-          div(class="cell" id="a")=question.a
-          div(class="cell" id="b")=question.b
-      div(id="second")
-        div(class="row")
-          div(class="cell" id="c")=question.c
-          div(class="cell" id="d")=question.d
+      div(id='answers')
+        div(id="first")
+          div(class="row")
+            div(class="cell" id="a")=question.a
+            div(class="cell" id="b")=question.b
+        div(id="second")
+          div(class="row")
+            div(class="cell" id="c")=question.c
+            div(class="cell" id="d")=question.d
     -var num = parseInt(index, 10) + 1;
     -var secNum = parseInt(index, 10) - 1;
     div(id='buttons')
@@ -39,4 +39,10 @@ html(lang='en')
         button(id='but_prev' type='button') Previous
       a(href="/questions/" + num)
         button(id='but_next' type='button') Next
+
+
+
+
+
+
 

@@ -131,42 +131,60 @@ app.get('/questions', function(req, res){
 });
 
 var sum = 0;
-var evaluateInput = function(x){
+var sumNums = function(x){
 	switch(x)
 	{
 		case 'a':
-			sum += 0;
+			sum += 1;
 			break;
 		case 'b':
-			sum += 15;
+			sum += 100;
 			break;
 		case 'c':
-			sum += 30;
+			sum += 1000;
 			break;
 		case 'd':
-			sum += 45;
+			sum += 10000;
 			break;
 	}
 
 	console.log(sum);
 };
 
+
 app.use(parser.urlencoded({ extended: false }));
 
 app.post('/questions/:index', function(req, res){
 	console.log("clicked" +  req.params.index);
 	console.log(req.body);
-	evaluateInput(req.body.answer);
+	sumNums(req.body.answer);
+});
+
+app.get('/questions/result', function(req,res){
+	console.log(sum);
+	res.render('res', {
+		res: sum
+	});
 });
 
 app.get('/questions/:index', function(req, res){
+	console.log("INDEX:" + req.params.index);
 	
-	if(req.params.index >= questionsObject.length || req.params.index < 0)
+	if(req.params.index < 0 || req.params.index >= questionsObject.length)
 	{
 		return;
 	}
 
-	res.render('x', {
+	if(req.params.index == questionsObject.length - 1)
+	{
+		console.log(sum);
+		res.render('lastquestion', {
+			question: questionsObject[req.params.index],
+		});
+		return;
+	}
+
+	res.render('quiz', {
 	  question: questionsObject[req.params.index],
 	  index: req.params.index
 	});
