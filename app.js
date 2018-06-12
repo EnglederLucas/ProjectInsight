@@ -122,7 +122,7 @@ var evaluateInput = function(x){
 	switch(x)
 	{
 		case 'a':
-			sum += 11;
+			sum += 0;
 			break;
 		case 'b':
 			sum += 15;
