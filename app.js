@@ -141,10 +141,10 @@ var evaluateInput = function(x){
 			sum += 15;
 			break;
 		case 'c':
-			sum += 20;
+			sum += 30;
 			break;
 		case 'd':
-			sum +=25;
+			sum += 45;
 			break;
 	}
 

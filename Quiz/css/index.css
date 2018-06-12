@@ -1,8 +1,50 @@
 .button{
     align-content: center;
     color: #fff;
-    background-color: orange;
-    padding: 10px 20px;
+    text-align: center;
+    font-size: 5vh;
+    background-color: #F05F40;
+    padding: 5vh 5vh;
     /*text-shadow: -1px 1px #417cb8;*/
     border: none;
+    float: none;
+
+    margin:auto;
+    display:block;
+
+    vertical-align: middle;
+}
+
+#link, #link:hover{
+  text-decoration: none;
+}
+
+#link:hover{
+  color:white;
+  background-color: rgb(214, 83, 54);
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  height: 10vh;
+}
+
+body{
+  background-image: url("../img/social-media-1806995_960_720.png");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
 }
