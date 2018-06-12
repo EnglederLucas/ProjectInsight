@@ -10,9 +10,8 @@
 #buttons{
     margin-top: 20vh;
     margin-right: 5vh;
-    float: left;
+    float: right;
     position: relative;
-    cursor: pointer;
 }
 
 #but_prev:hover{
@@ -74,14 +73,12 @@ h1{
     padding: 20px;
     border-style: solid;
     border-width: thin;
-    cursor: pointer;
 }
 
 #qtitle{
-    font-size: 250%;
+    font-size: 350%;
     float: left;
     margin-top: 0vh;
-    color: rgb(199, 55, 39);
 }
 
 #list{
