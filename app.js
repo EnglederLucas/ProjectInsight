@@ -184,6 +184,11 @@ app.get('/questions/:index', function(req, res){
 		return;
 	}
 
+	if(req.params.index == 0)
+	{
+		sum = 0;
+	}
+
 	res.render('quiz', {
 	  question: questionsObject[req.params.index],
 	  index: req.params.index

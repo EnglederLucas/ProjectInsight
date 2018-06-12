@@ -1,4 +1,65 @@
-extends layout
+html
+  head
+    style
+      include ../css/res.css
+      include ../vendor/bootstrap/css/bootstrap.min.css
 
-block content
+
+    title Insight
+
+  body
+    h1 You'll probably like:
+    -if(res < 600)
+        div.orange
+            h2 Reddit
+            a(href='https://www.reddit.com')
+            |         Reddit is a social news aggregation, web content rating, and discussion website.
+            |         Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members.
+            |         Posts are organized by subject into user-created boards called "subreddits", which cover a variety of topics including
+            |         news, science, movies, video games, music, books, fitness, food, and image-sharing.
+    -if(res < 6000 && res > 500)
+        .white
+            h2 Twitter
+            a(href='https://www.twitter.com')
+            |         Twitter is known as the real-time, public microblogging network where news breaks first. 
+            |         It's limited amount of characters (140 or 280) makes it unique in the micro-blogging business.
+            |         Twitter is mostly used to share your opinions or commenting on other people's opininions.<br><br>
+            |         
+            |         Twitter shares some key similarities with Facebook still has a great impact on society. Especially
+            |         in situations where a public statement by a spokesman would be needed. US President Trum is famous 
+            |         because of his often controversial public statements on twitter. 
+        .orange
+            h2 Tumblr
+            a(href='https://www.tumblr.com')
+            |         Tumblr is a microblogging and social networking website    
+            |         The service allows users to post multimedia and other content to a short-form blog. 
+            |         
+            |         Users can follow other users' blogs and reblog them. Reblogging is a key feature of tumblr and enables
+            |         the users to mention and quote othe blog posts of the site. This connects the community more than usual.
+            |         Tumblr is primarily used by teenagers and college students. Most of the female. This fact makes the community very liberal and modern.
+    -if(res >= 6000)
+        .white
+            h2 Instagram
+            a(href='https://www.instagram.com')
+            |         Instagram has grown to be one of the most popular social networks for photo sharing that the mobile web has ever seen. 
+            |         It's the ultimate social network for sharing real-time photos and short videos while on the go.
+            |         
+            |         Instagram lets registered users upload photos or videos to the service. Users can apply various digital filters to their images, and add locations through geotags. 
+            |         They can add hashtags to their posts, linking the photos up to other content on Instagram featuring the same subject or overall topic.
+            |         
+            |         Instagrams user demographic is mainly focused on youngpeople in urban areas. 
+        .orange
+            h2 Facebook
+            a(href='https://www.facebook.com')
+            |         The probably biggest and best known social media sites of all. Facebook has been dominating the field for years.<br>
+            |         
+            |         The Facebook website was launched on February 4, 2004, by Mark Zuckerberg, along with fellow Harvard College students.
+            |         The site has gained over 2 Billion users over the course of its existence. Thats nearly a quarter of the human population.
+            |         Facebooks mechanisms are very easy to grasp and don't require any technical knowledge whatsoever. Facebook being one of the first modern 
+            |         social networks pioneered many concepts like NewsFeed, Following, Likes and Instant Messaging. regarding Instant Messaging Messenger,
+            |         facebooks messenger app, is the worlds second most used messenger, only topped by WhattsApp.
+                
+            
+    
+    
     

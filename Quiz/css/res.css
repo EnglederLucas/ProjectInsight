@@ -1,0 +1,34 @@
+.orange{
+    padding: 4%;
+    background-color:  #F05F40;
+    font-size: 140%;
+    color: white;
+}
+
+.white{
+    padding: 4%;
+    background-color:  white;
+    font-size: 140%;
+    color: black;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin: 0 3% 3% 0;
+}
+
+h1{
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+body{
+    background-image: url("../img/social-media-1806995_960_720.png");
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
