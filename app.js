@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
+const parser = require('body-parser')
 
 //mongoose.connect('mongodb://localhost/questions');
 
@@ -49,7 +50,7 @@ let questionsObject = [
 	
 	{
 		question:"Are you athletic?",
-    a:"I'm a professional couch potato",
+    	a:"I'm a professional couch potato",
 		b:"I should be working out right now",
 		c:"Well, kinda",
 		d:"I'm an absolute sportaholic"
@@ -105,9 +106,7 @@ let questionsObject = [
 	}
 ];
 
-var currentIndex = 0;
-
-app.get('/',function(req,res){-
+app.get('/',function(req,res){
 	//res.sendFile('../Mainpage/index.html');
 	res.sendFile(path.join(__dirname, 'Mainpage/index.html'));
 });
@@ -118,10 +117,34 @@ app.get('/questions', function(req, res){
 	});
 });
 
-app.post('/questions/:index', function(req, res){
-	console.log("clicked" +  req.params.index + req.body);
+var sum = 0;
+var evaluateInput = function(x){
+	switch(x)
+	{
+		case 'a':
+			sum += 10;
+			break;
+		case 'b':
+			sum += 15;
+			break;
+		case 'c':
+			sum += 20;
+			break;
+		case 'd':
+			sum +=25;
+			break;
+	}
 
-})
+	console.log(sum);
+};
+
+app.use(parser.urlencoded({ extended: false }));
+
+app.post('/questions/:index', function(req, res){
+	console.log("clicked" +  req.params.index);
+	console.log(req.body);
+	evaluateInput(req.body.answer);
+});
 
 app.get('/questions/:index', function(req, res){
 	
