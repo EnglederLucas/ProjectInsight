@@ -19,7 +19,7 @@ const parser = require('body-parser')
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
  
-server.listen(server_port, server_ip_address, function () {
+app.listen(server_port, server_ip_address, function () {
   console.log( "Listening on " + server_ip_address + ", port " + server_port )
 });
 
@@ -173,11 +173,6 @@ app.get('/questions/:index', function(req, res){
 	console.log(req.params.index);		
 	console.log('HOME');
 });
-
-app.listen(3000, function(){
-    console.log('Server connected to 3000');
-});
-
 
 
 app.use(express.static(path.join(__dirname, '/Mainpage')));
