@@ -1,5 +1,8 @@
 var http = new XMLHttpRequest();
 
+var lastButton;
+var answer;
+
 
 window.onload = function () {
     http.open("POST", window.location.href, true);
@@ -8,25 +11,47 @@ window.onload = function () {
 
     var a = document.getElementById("a");
     a.addEventListener('click', function() { 
-        http.send("answer=a"); 
+        answer = "answer=a";
+        if(lastButton != undefined)
+            lastButton.style.background='#F05F40'
+        
         a.style.background='#000000';
+        lastButton = a;
     }, false);
     
     var b = document.getElementById("b");
     b.addEventListener('click', function() { 
-        http.send("answer=b"); 
+        answer = "answer=b";
+        
+        if(lastButton != undefined)
+            lastButton.style.background='#F05F40'
+
         b.style.background='#000000';
     }, false);
 
     var c = document.getElementById("c");
     c.addEventListener('click', function() { 
-        http.send("answer=c"); 
+        answer = "answer=c";
+        
+        if(lastButton != undefined)
+            lastButton.style.background='#F05F40'
+
         c.style.background='#000000';
     }, false);
 
     var d = document.getElementById("d");
     d.addEventListener('click', function() { 
-        http.send("answer=d"); 
+        answer = "answer=d";
+        
+        if(lastButton != undefined)
+            lastButton.style.background='#F05F40'
+
         d.style.background='#000000';
+    }, false);
+
+    var btn = document.getElementById("but_next");
+    btn.addEventListener('click', function() { 
+        if(answer != undefined)
+            http.send(answer);
     }, false);
 };
