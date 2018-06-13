@@ -15,7 +15,7 @@ window.onload = function () {
         if(lastButton != undefined)
             lastButton.style.background='#F05F40'
         
-        a.style.background='#000000';
+        a.style.background='#8f321d';
         lastButton = a;
     }, false);
     
@@ -26,7 +26,8 @@ window.onload = function () {
         if(lastButton != undefined)
             lastButton.style.background='#F05F40'
 
-        b.style.background='#000000';
+        b.style.background='#8f321d';
+        lastButton = b;
     }, false);
 
     var c = document.getElementById("c");
@@ -36,7 +37,8 @@ window.onload = function () {
         if(lastButton != undefined)
             lastButton.style.background='#F05F40'
 
-        c.style.background='#000000';
+        c.style.background='#8f321d';
+        lastButton = c;
     }, false);
 
     var d = document.getElementById("d");
@@ -46,7 +48,8 @@ window.onload = function () {
         if(lastButton != undefined)
             lastButton.style.background='#F05F40'
 
-        d.style.background='#000000';
+        d.style.background='#8f321d';
+        lastButton = d;
     }, false);
 
     var btn = document.getElementById("but_next");

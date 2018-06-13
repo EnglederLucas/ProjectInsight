@@ -82,6 +82,10 @@ h1{
     cursor: pointer;
 }
 
+.cell:hover{
+    background-color: rgb(143, 50, 29);    
+}
+
 #qtitle{
     font-size: 350%;
     float: none;
@@ -114,4 +118,5 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
+    overflow: hidden;
   }
