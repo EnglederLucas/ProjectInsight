@@ -12,6 +12,7 @@
     right: 0;
     margin: 5%;
     position: absolute;
+    cursor: pointer;
 }
 
 #but_prev:hover{
@@ -78,6 +79,7 @@ h1{
     padding: 20px;
     border-style: solid;
     border-width: thin;
+    cursor: pointer;
 }
 
 #qtitle{

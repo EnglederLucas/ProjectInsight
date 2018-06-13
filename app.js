@@ -83,7 +83,7 @@ let questionsObject = [
 		d:"I talk more to strangers than to my family"
 	},
 	{		
-    	question:"What kind of relationship dou share with your family?",
+    	question:"What kind of relationship do share with your family?",
 		a:"It's complicated",
 		b:"I don't know, haven't talked to them in a while",
 		c:"Fine.",
@@ -129,6 +129,12 @@ app.get('/questions', function(req, res){
 		title: 'Questions'
 	});
 });
+
+app.get('/social-media-info', function(req, res){
+	res.sendFile(path.join(__dirname, 'SocialNetworks/socialmedia.html'));
+});
+
+
 
 var sum = 0;
 var sumNums = function(x){
@@ -197,7 +203,7 @@ app.get('/questions/:index', function(req, res){
 	console.log('HOME');
 });
 
-
+app.use(express.static(path.join(__dirname, '/SocialNetworks')));
 app.use(express.static(path.join(__dirname, '/Mainpage')));
 app.use('/js', express.static(__dirname + '/Quiz/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/Quiz/node_modules/jquery/dist')); // redirect JS jQuery
