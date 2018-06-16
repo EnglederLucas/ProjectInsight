@@ -205,8 +205,8 @@ app.get('/questions/:index', function(req, res){
 
 app.use(express.static(path.join(__dirname, '/SocialNetworks')));
 app.use(express.static(path.join(__dirname, '/Mainpage')));
-app.use('/js', express.static(__dirname + '/Quiz/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
+app.use('/js', express.static(__dirname + '/../../js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/Quiz/node_modules/jquery/dist')); // redirect JS jQuery
-app.use('/css', express.static(__dirname + '/Quiz/node_modules/bootstrap/dist/css'));
+app.use('/css', express.static(__dirname + '/../../css')); // redirect bootstrap JS
 app.use('/cssSidebar', express.static(__dirname + '/Quiz/cssSidebar'));
 
