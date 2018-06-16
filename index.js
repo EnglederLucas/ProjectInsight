@@ -78,7 +78,7 @@ let questionsObject = [
 		d:"I talk more to strangers than to my family"
 	},
 	{		
-    	question:"What kind of relationship do share with your family?",
+    	question:"What kind of relationship do you share with your family?",
 		a:"It's complicated",
 		b:"I don't know, haven't talked to them in a while",
 		c:"Fine.",

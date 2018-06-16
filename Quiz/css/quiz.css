@@ -31,7 +31,7 @@
     color:white;
     padding: 30px 50px;
 
-    font-size: 3em;
+    font-size: 3.5em;
 
 
     /*text-shadow: -1px 1px #417cb8;*/
@@ -59,7 +59,7 @@ h1{
     font-size: 100%;
     display: block;
     width: 200vh;
-    font-size: 300%;
+    font-size: 350%;
 }
 
 #table {
@@ -87,7 +87,7 @@ h1{
 }
 
 #qtitle{
-    font-size: 350%;
+    font-size: 6vh;
     float: none;
     margin-top: 5%;
     margin-bottom: 2%;
